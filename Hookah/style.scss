@@ -168,7 +168,7 @@ body{
     border-radius: 30px;
     @media screen and( max-width:400px) {
         @include fonts(700,16px);
-        width: 100%;
+        
     }
 }
 .btn {
