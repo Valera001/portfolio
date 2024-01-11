@@ -63,9 +63,11 @@
                             We’ll deliver the hookah, set it up and leave it to you 
                             <span class="violet-color">for 24 hours.</span>
                         </h3>
-                        <button class="hero__btn btn">
-                            Order service
-                        </button>
+                        <a href="#prise"> 
+                            <button class="hero__btn btn">
+                                Order service
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -587,7 +589,7 @@
             </div>
         </section>
 
-        <section class="price">
+        <section id="prise" class="price">
             <div class="container">
                 <div class="prise__wrapper">
                     <h2 class="prise__title title">
@@ -610,7 +612,7 @@
                                     <span class="price-card__box-left">$75</span>
                                     <span class="price-card__box-right">$30 additional day</span>
                                 </div>
-                                <button class="price__cards-btn btn">
+                                <button id="open" class="price__cards-btn btn">
                                     Order 1 hookah
                                 </button>
                             </div>
@@ -657,6 +659,49 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <h3 class="popup__title">
+                            Leave your contacts
+                        </h3>                        
+                            <svg id="close" class="popup__close" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                <path d="M-1.70457e-05 2.00002L1.99997 2.84095e-05L9.99993 7.99998L7.99994 9.99997L-1.70457e-05 2.00002Z" fill="#7E7E7E"/>
+                                <path d="M7.99994 2.84095e-05L9.99993 2.00002L1.99997 9.99997L-1.72955e-05 7.99998L7.99994 2.84095e-05Z" fill="#7E7E7E"/>
+                            </svg>                        
+                        <form class="popup__form">
+                            <div>
+                                <input type="text" placeholder="Your name" required>
+                                <input type="phone" placeholder="Your phone" required>
+                            </div>
+                            <div class="popup__order">
+                                <h4 class="popup__order-title">
+                                    Your order:
+                                </h4>
+                                <div class="popup__order-content">
+                                    <img src="./img/price1.webp" alt="price">
+                                    <div class="popup__order-set">
+                                        <h4>1 hookah</h4>
+                                        <p>3 tobacco filled fruit heads</p>
+                                    </div>
+                                    <span class="popup__order-prise">
+                                        $75
+                                    </span>
+                                </div>
+                            </div>
+                            <details class="popup__form-dropdown">
+                                <summary>Details</summary>
+                                <div >
+                                    <input type="text" placeholder="Delivery address">
+                                    <input type="text" placeholder="Delivery date and time">
+                                    <textarea name="" id="" placeholder="Write the hookahs and flavors you want"></textarea>
+                                </div>
+                            </details>
+                            <button class="btn">Order service</button>
+                        </form>
                     </div>
                 </div>
             </div>

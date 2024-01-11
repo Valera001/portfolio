@@ -20,3 +20,32 @@ new Swiper('.swiper', {
         },
       }
   });
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const prise = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(prise).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+  })
+}
+
+  document.getElementById('open').addEventListener('click', function() {
+    document.getElementById('popup').classList.add('show');
+});
+
+document.getElementById('close').addEventListener('click', function() {
+    document.getElementById('popup').classList.remove('show');
+});
+
+document.querySelector('.popup__body').addEventListener('click', function(event) {
+  if (event.target === this) {
+      document.getElementById('popup').classList.remove('show');
+  }
+});
